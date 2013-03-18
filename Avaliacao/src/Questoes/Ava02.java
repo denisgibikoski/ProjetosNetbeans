@@ -17,16 +17,16 @@ public class Ava02 {
         
        String nome;
        double SalarioBase, TotalSalario;
-       int TotalDeVenda;
+       double TotalDeVenda;
              
         System.out.println("Entre com o nome do Vendedor");
-        nome = ler.next();
+        nome = ler.nextLine();
         System.out.println("Digite Salario Base do vendedor");
         SalarioBase = ler.nextDouble();
         System.out.println("Digite o TOTAL de Vendas no mes");
-        TotalDeVenda = ler.nextInt();
+        TotalDeVenda = ler.nextDouble();
         
-        double comisao = (SalarioBase*5)/TotalDeVenda;
+        double comisao = TotalDeVenda*0.05;
         TotalSalario = SalarioBase+comisao;
         
         System.out.println("O Nome do Vededor e:"+nome+"\nO Salario do vendedor e :"+TotalSalario);

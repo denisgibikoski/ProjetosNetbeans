@@ -41,15 +41,12 @@ public class Ava01 {
                     System.out.println("Sabado");
                 case 7: 
                     System.out.println("Donigo");
-                   break;       
-            }
+                   break;   
+                 default:
+                       System.out.println("valor invalido");
+                    }
             
-            System.out.println("Deseja Continuar 1 par sim 0 para nao");
-          
-        
-   
-            
-        
+             
         
     }
     

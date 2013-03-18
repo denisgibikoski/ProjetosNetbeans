@@ -11,34 +11,30 @@ public class Ava05 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         int numero;
-        int resto = 0;
+        int numDivisores = 0;
         System.out.println("entre com um numero");
         numero = ler.nextInt();
-        int elemesmo = 0;
-        int contador = 0;
-        while (numero >= elemesmo) {
-            ++elemesmo;
-             resto = numero % elemesmo;
-            }
- 
-        
-     if (resto == 0 ){
-            
-         contador++;
-     }
-     
-     if ( contador <= 2){
-         System.out.println("O numero "+numero+"  é primo");
-     }
-     else
-     {
-         System.out.println("Numero "+numero+"  não é primo");
-     }
-        
+       if ( numero == 2){
+           System.out.println("É primo");
+       }else if (numero == 1 || numero %2 == 0){
+           System.out.println("Nao é  Primo");
+       }else{
+           int cont=0;
+           for (int i = 1; i < numero; i++) {
+               if( numero % i == 0){
+                   cont++;
+               }
+               if(cont == 2 ){
+                   System.out.println("É Primo");                  
+               }else{
+                   System.out.println("Não é Primo");
+               }
+               
+               
+           }
+           
+       }
        
-        
-        
-        
         
     }
     

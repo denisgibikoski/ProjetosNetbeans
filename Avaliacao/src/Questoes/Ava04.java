@@ -16,7 +16,7 @@ public class Ava04 {
         double raio, volume,area;
         System.out.println("entre como raio da esfera");
         raio= ler.nextDouble();
-        volume= (4/3)*Math.PI*Math.pow(raio, 3);
+        volume= (float)4/3*Math.PI*Math.pow(raio, 3);
         area = 4 * Math.PI*Math.pow(raio, 2);
         
         System.out.println("O valor do Volume e:  "+volume+"\nE da Area :  "+area);

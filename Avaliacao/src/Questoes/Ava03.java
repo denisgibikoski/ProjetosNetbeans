@@ -24,12 +24,13 @@ public class Ava03 {
         for (cont=0;cont<Voltas;cont++){
              System.out.println("Entre com o tempo da Volta");
              Tempo= ler.nextFloat();
-             
+           
             if (Tempo<MelhorTempo){
                 
                 MelhorTempo= Tempo;
+            
+            VotaMaisRapida = cont+1;
             }
-            VotaMaisRapida = cont;
             SomaTempos += Tempo;
               
            
