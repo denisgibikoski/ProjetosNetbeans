@@ -4,12 +4,17 @@
  */
 package telas;
 
+
+import curriculo.ConnectionFactory;
+import java.sql.Connection;
+
 /**
  *
  * @author Hermes
  */
 public class Principal extends javax.swing.JFrame {
-
+//conectado
+		Connection con =  new ConnectionFactory().getConnection();
     /**
      * Creates new form Principal
      */
